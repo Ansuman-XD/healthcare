@@ -15,6 +15,7 @@ import Foodlog from "./components/Foodlog";
 import Progress from "./components/Progress";
 import Reports from "./components/Reports";
 import Exercise from "./components/Exercise";
+import Profile from "./pages/Profile";
 const App = () => {
   const { user, token } = useAuth(); // Access user and token
 
@@ -39,7 +40,8 @@ const App = () => {
         <Route path="/Progress" element={<Progress />} />
         <Route path="/Reports" element={<Reports />} />
         <Route path="/Exercise" element={<Exercise />} />
-        
+
+        <Route path="/profile" element={<Profile />} />
         
       </Routes>
     </Router>
